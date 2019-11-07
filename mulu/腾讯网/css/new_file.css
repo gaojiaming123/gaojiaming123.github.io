@@ -1,0 +1,64 @@
+.content{
+				float: left;
+			}
+			.search_box{
+				position:relative;
+				width: 1500px;
+				height: 70px;
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				font-family: 12px;
+				left: 500px;
+			}
+			.search_box h3,.search_tips h4{display: none;}/*隐藏标题文字*/
+            .search_box select{
+            	float: left;
+            	width: 100px;
+            	height: 50px;
+            }	
+            .search_box input{
+            	float: left;
+            	width: 600px;
+            	height: 50px;
+            	padding: 1px 2px;
+            	margin: 0px 5px;
+            	border: 1px solid #619FCF;
+            }
+            .search_box button{
+            	float: left;
+            	width: 50px;
+            	height: 50px;
+            	text-indent: -9999px;
+            	border: 0 none;
+                background:url(img/29466618_175801826534_2。3.jpg) no-repeat 0 0;
+                cursor: pointer;
+            }
+            .search_tips{
+            	position: absolute;
+                top: 17px;
+                left: 65px;
+                width: 190px;
+                padding: 5px 5px 0;
+            .border: 1px solid #619FCF;
+            }	
+            .search_tips li{
+            	float: left;
+            	width: 100%;
+            	height: 22px;
+            	line-height: 22px;
+            	list-style: none;
+            }	
+            .search_tips li a{
+            	float: left;
+            	text-decoration: none;
+                color: #333333; 
+          
+            }
+            .search_tips li a:hover{
+            	color: #333333;
+            }
+            .search_tips li span{
+            	float: right;
+            	color: #cccccc;
+            }
