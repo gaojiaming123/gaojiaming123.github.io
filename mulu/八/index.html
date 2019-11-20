@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>我的第一次js作业</title>
+		<style>
+			.box1{
+				margin: auto;
+				width: 500px;
+				height: 500px;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<div class="box1">
+		<label>学号</label>
+		<input type="number" id="h1"/>
+		<label>姓名</label>
+		<input type="text" id="h2" />
+		<input type="button" value="新添" onclick="gaojiaming()" / >
+		<br />
+		<table border="1px" style="border-collapse: collapse;" id="ming">
+			<tr id="Mvp">
+				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;号&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+				<td><a href="#">删除</a>
+			</tr>	
+		</table>
+		</div>
+		<script type="text/javascript">
+        	function gaojiaming(){
+        		var Mvp=document.getElementById("ming").insertRow();
+        		var baba1=Mvp.insertCell();
+        		var baba2=Mvp.insertCell();
+        		var baba3=Mvp.insertCell();
+        		baba1.innerHTML=document.getElementById("h1").value;
+        		baba2.innerHTML=document.getElementById("h2").value;
+        		var d=document.createElement("input");
+        		baba3.appendChild(d);
+        		d.setAttribute("type","button");
+        		d.setAttribute("value","删除");
+        		d.onclick=function(){
+        			this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode);
+        		}	
+        	}
+        </script>
+	</body>
+<html>
